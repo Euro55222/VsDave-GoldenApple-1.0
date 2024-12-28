@@ -49,7 +49,6 @@ jobs:
 
       - name: Install Haxelib
         run: |
-          haxelib --quiet setup /home/runner/haxelib
           haxelib --quiet install hxcpp > /dev/null
           haxelib --quiet install polymod
           haxelib --quiet install lime 7.9.0
