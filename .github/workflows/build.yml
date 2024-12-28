@@ -48,7 +48,7 @@ jobs:
           ndk: '21.3.6528147'
 
       - name: Set up Haxe
-        uses: HaxeFoundation/setup-haxe@v1
+        uses: HaxeFoundation/setup-haxe@v1.1.2
         with:
           haxe-version: '4.2.5'
 
