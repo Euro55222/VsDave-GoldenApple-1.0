@@ -56,6 +56,10 @@ jobs:
       - name: Install Haxe and Haxelib
         run: sudo apt-get install haxe -y
 
+      - name: Set up Haxelib
+        run: |
+          haxelib setup /home/runner/haxelib
+
       - name: Install Haxelib
         run: |
           haxelib install hxcpp > /dev/null
