@@ -47,15 +47,16 @@ jobs:
           build-tools: '30.0.3'
           ndk: '21.3.6528147'
 
-      - name: Setup Haxe
-        uses: krdlab/setup-haxe@v1.1.5
+      - name: Set up Haxe
+        uses: HaxeFoundation/setup-haxe@v1
         with:
-          haxe-version: 4.2.5
+          haxe-version: '4.2.5'
 
       - name: Install Haxelib
         run: |
           haxelib --quiet setup /home/runner/haxelib
           haxelib --quiet install hxcpp > /dev/null
+          haxelib install polymod
           haxelib --quiet install lime 7.9.0
           haxelib --quiet install openfl 9.1.0
           haxelib --quiet --never install flixel 4.11.0
