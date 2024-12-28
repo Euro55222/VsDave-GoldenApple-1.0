@@ -49,10 +49,12 @@ jobs:
 
       - name: Install Haxe
         run: sudo add-apt-repository ppa:haxe/releases -y
-    - name: Update package list
-      run: sudo apt-get update
-    - name: Install Haxe and Haxelib
-      run: sudo apt-get install haxe -y
+        
+      - name: Update package list
+        run: sudo apt-get update
+        
+      - name: Install Haxe and Haxelib
+        run: sudo apt-get install haxe -y
 
       - name: Install Haxelib
         run: |
